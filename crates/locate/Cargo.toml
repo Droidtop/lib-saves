@@ -13,9 +13,9 @@ path = "src/lib.rs"
 
 [dependencies]
 droidtop-agent-core = { package = "sync-core", git = "https://github.com/Droidtop/lib-sync", tag = "v0.1.2" }
-# lib-games main 6642652, the commit that becomes v0.1.3: its tag waits on CI that needs this crate built on
-# lib-sync 0.1.2 first (Droidtop/tracker#798). Becomes tag = "v0.1.3" once that tag exists.
-droidtop-agent-scan = { package = "games-scan", git = "https://github.com/Droidtop/lib-games", rev = "664265258b06db4f4d41b0d3658154c78e462647" }
+# lib-games ci/title-key-870 688f6ad, games-scan 0.3.0 (Droidtop/tracker#871, #870): Epic catalog ids, title2 keys,
+# Found::new. Becomes tag = "v0.3.0" once lib-games releases it.
+droidtop-agent-scan = { package = "games-scan", git = "https://github.com/Droidtop/lib-games", rev = "688f6adf382e291457e007e3d8caf7f9c8f34134" }
 droidtop-agent-store = { package = "sync-store", git = "https://github.com/Droidtop/lib-sync", tag = "v0.1.2" }
 serde.workspace = true
 serde_json.workspace = true

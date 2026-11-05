@@ -3,6 +3,13 @@
 All notable changes to lib-saves. Versions follow [Semantic Versioning](https://semver.org/)
 (in 0.x, only a new minor version may break the interface; CI's `semver` job enforces it).
 
+## [0.2.0]
+
+### Changed
+- **Breaking:** built on games-scan 0.3.0 (lib-games, Droidtop/tracker#871 and #870), whose `Found` and `Scan` appear in
+  this crate's interface (`Saves::restore`, `roots_for`), so a program moves to games-scan 0.3.0 with it. games-scan
+  0.3.0 keys Epic games by catalog id and title-keyed games by `title2:`, and makes `Found` with `Found::new`.
+
 ## [0.1.3]
 
 ### Added

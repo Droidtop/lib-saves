@@ -187,17 +187,14 @@ mod tests {
 
     #[test]
     fn a_proton_game_resolves_inside_its_prefix() {
-        let found = Found {
-            game: droidtop_agent_core::library::ScannedGame {
-                key: "steam:1".into(),
-                title: "G".into(),
-                platform: None,
-                install: Default::default(),
-            },
-            base: Some(PathBuf::from("/games/G")),
-            prefix: Some(droidtop_agent_scan::Prefix { drive_c: PathBuf::from("/pfx/drive_c"), user: "steamuser".into() }),
-            engine: None,
-        };
+        let mut found = Found::new(droidtop_agent_core::library::ScannedGame {
+            key: "steam:1".into(),
+            title: "G".into(),
+            platform: None,
+            install: Default::default(),
+        });
+        found.base = Some(PathBuf::from("/games/G"));
+        found.prefix = Some(droidtop_agent_scan::Prefix { drive_c: PathBuf::from("/pfx/drive_c"), user: "steamuser".into() });
         let roots = roots_for(Some(&found), None);
         assert_eq!(roots["<winAppData>"], PathBuf::from("/pfx/drive_c/users/steamuser/AppData/Roaming"));
         assert_eq!(roots["<base>"], PathBuf::from("/games/G"));
