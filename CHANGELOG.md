@@ -3,11 +3,15 @@
 All notable changes to lib-saves. Versions follow [Semantic Versioning](https://semver.org/)
 (in 0.x, only a new minor version may break the interface; CI's `semver` job enforces it).
 
-## [Unreleased]
+## [0.1.3]
 
 ### Added
 - CI's `semver` job: `cargo-semver-checks` against the last release, so a breaking change fails unless its version and
   this CHANGELOG say so (Droidtop/tracker#867).
+
+### Changed
+- `saves-locate`: built on lib-sync v0.1.2 (cross-store links, Droidtop/tracker#798) and lib-games v0.1.3, so
+  droidtop-agent can take lib-sync v0.1.2 and link one sync-core.
 
 ## [0.1.2]
 
