@@ -3,6 +3,14 @@
 All notable changes to lib-saves. Versions follow [Semantic Versioning](https://semver.org/)
 (in 0.x, only a new minor version may break the interface; CI's `semver` job enforces it).
 
+## [0.2.1]
+
+### Changed
+- Builds with Rust 1.85 (`rust-version` 1.89 → 1.85), the oldest Pythia builds with (Ubuntu's rustc-1.85, as
+  Launchpad does; Droidtop/tracker#867). A new `msrv` CI job checks the workspace with 1.85, resolving dependencies
+  to versions 1.85 can build, as a consumer's lock would.
+- On lib-sync v0.1.6 and games-scan 0.3.1, the releases that build with 1.85.
+
 ## [0.2.0]
 
 ### Changed

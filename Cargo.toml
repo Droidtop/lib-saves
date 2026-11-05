@@ -3,11 +3,11 @@ resolver = "2"
 members = ["crates/locate"]
 
 [workspace.package]
-version = "0.2.0"
+version = "0.2.1"
 edition = "2021"
 license = "GPL-3.0-only"
 repository = "https://github.com/Droidtop/lib-saves"
-rust-version = "1.89"
+rust-version = "1.85"
 
 [workspace.dependencies]
 # windowcast's device identity and pairing, used as they are (docs/DESIGN.md

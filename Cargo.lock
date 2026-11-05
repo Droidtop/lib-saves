@@ -370,8 +370,8 @@ dependencies = [
 
 [[package]]
 name = "engines-detect"
-version = "0.1.0"
-source = "git+https://github.com/Droidtop/lib-engines?tag=v0.1.0#35d180cdecb8d4c37e12c91cbcd0aa6575dac8d2"
+version = "0.1.1"
+source = "git+https://github.com/Droidtop/lib-engines?tag=v0.1.1#72d7346dc36a8d4439f1b212a6dbd7b870d891eb"
 dependencies = [
  "regex",
  "serde_json",
@@ -438,6 +438,16 @@ dependencies = [
 ]
 
 [[package]]
+name = "fs4"
+version = "1.1.0"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "7e72ed92b67c146290f88e9c89d60ca163ea417a446f61ffd7b72df3e7f1dfd5"
+dependencies = [
+ "rustix 1.1.6",
+ "windows-sys 0.61.2",
+]
+
+[[package]]
 name = "futures-core"
 version = "0.3.34"
 source = "registry+https://github.com/rust-lang/crates.io-index"
@@ -463,8 +473,8 @@ dependencies = [
 
 [[package]]
 name = "games-scan"
-version = "0.3.0"
-source = "git+https://github.com/Droidtop/lib-games?rev=688f6adf382e291457e007e3d8caf7f9c8f34134#688f6adf382e291457e007e3d8caf7f9c8f34134"
+version = "0.3.1"
+source = "git+https://github.com/Droidtop/lib-games?rev=ee121ab997b76c3f24951aae6ffe49d670d822da#ee121ab997b76c3f24951aae6ffe49d670d822da"
 dependencies = [
  "dirs",
  "engines-detect",
@@ -498,7 +508,7 @@ version = "0.5.0"
 source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "dc3655aa6818d65bc620d6911f05aa7b6aeb596291e1e9f79e52df85583d1e30"
 dependencies = [
- "rustix",
+ "rustix 0.38.44",
  "windows-targets 0.52.6",
 ]
 
@@ -773,6 +783,12 @@ name = "linux-raw-sys"
 version = "0.4.15"
 source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "d26c52dbd32dccf2d10cac7725f8eae5296885fb5703b261f7d0a0739ec807ab"
+
+[[package]]
+name = "linux-raw-sys"
+version = "0.12.1"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "32a66949e030da00e8c7d4434b251670a91556f4144941d37452769c25d58a53"
 
 [[package]]
 name = "litemap"
@@ -1098,8 +1114,21 @@ dependencies = [
  "bitflags 2.13.2",
  "errno",
  "libc",
- "linux-raw-sys",
+ "linux-raw-sys 0.4.15",
  "windows-sys 0.59.0",
+]
+
+[[package]]
+name = "rustix"
+version = "1.1.6"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "e5e76742e5294153d4dde1207dbec5bdd81eef6fabdc0d2118babadabfd858aa"
+dependencies = [
+ "bitflags 2.13.2",
+ "errno",
+ "libc",
+ "linux-raw-sys 0.12.1",
+ "windows-sys 0.61.2",
 ]
 
 [[package]]
@@ -1151,7 +1180,7 @@ checksum = "9774ba4a74de5f7b1c1451ed6cd5285a32eddb5cccb8cc655a4e50009e06477f"
 
 [[package]]
 name = "saves-locate"
-version = "0.2.0"
+version = "0.2.1"
 dependencies = [
  "dirs",
  "flate2",
@@ -1354,8 +1383,8 @@ dependencies = [
 
 [[package]]
 name = "sync-core"
-version = "0.1.2"
-source = "git+https://github.com/Droidtop/lib-sync?tag=v0.1.2#f4a661bab2cdc1d4dc90731f76835741abff5db8"
+version = "0.1.6"
+source = "git+https://github.com/Droidtop/lib-sync?tag=v0.1.6#816d9198c633719d65c387658ece0aa7c3b0fc4e"
 dependencies = [
  "boringtun",
  "chacha20poly1305",
@@ -1378,10 +1407,11 @@ dependencies = [
 
 [[package]]
 name = "sync-store"
-version = "0.1.2"
-source = "git+https://github.com/Droidtop/lib-sync?tag=v0.1.2#f4a661bab2cdc1d4dc90731f76835741abff5db8"
+version = "0.1.6"
+source = "git+https://github.com/Droidtop/lib-sync?tag=v0.1.6#816d9198c633719d65c387658ece0aa7c3b0fc4e"
 dependencies = [
  "dirs",
+ "fs4",
  "gethostname",
  "serde",
  "serde_json",
