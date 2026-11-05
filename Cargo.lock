@@ -433,8 +433,8 @@ dependencies = [
 
 [[package]]
 name = "games-scan"
-version = "0.1.0"
-source = "git+https://github.com/Droidtop/lib-games?tag=v0.1.0#f7f142190d49688e4efb6fa2cd461912d8d07ea0"
+version = "0.1.2"
+source = "git+https://github.com/Droidtop/lib-games?tag=v0.1.2#914152b296183b7cc4816d3fad09ec15619f8603"
 dependencies = [
  "dirs",
  "engines-detect",
@@ -1102,7 +1102,7 @@ checksum = "9774ba4a74de5f7b1c1451ed6cd5285a32eddb5cccb8cc655a4e50009e06477f"
 
 [[package]]
 name = "saves-locate"
-version = "0.1.1"
+version = "0.1.2"
 dependencies = [
  "dirs",
  "flate2",
@@ -1293,8 +1293,8 @@ dependencies = [
 
 [[package]]
 name = "sync-core"
-version = "0.1.0"
-source = "git+https://github.com/Droidtop/lib-sync?tag=v0.1.0#c1ad61a0aacdeba490c58f5e2c292fcb8f322581"
+version = "0.1.1"
+source = "git+https://github.com/Droidtop/lib-sync?tag=v0.1.1#796d9dd7f28f49ff45064b2beb1af5732c5715e7"
 dependencies = [
  "boringtun",
  "chacha20poly1305",
@@ -1317,8 +1317,8 @@ dependencies = [
 
 [[package]]
 name = "sync-store"
-version = "0.1.0"
-source = "git+https://github.com/Droidtop/lib-sync?tag=v0.1.0#c1ad61a0aacdeba490c58f5e2c292fcb8f322581"
+version = "0.1.1"
+source = "git+https://github.com/Droidtop/lib-sync?tag=v0.1.1#796d9dd7f28f49ff45064b2beb1af5732c5715e7"
 dependencies = [
  "dirs",
  "gethostname",
