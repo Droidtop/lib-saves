@@ -12,11 +12,9 @@ name = "droidtop_agent_saves"
 path = "src/lib.rs"
 
 [dependencies]
-droidtop-agent-core = { package = "sync-core", git = "https://github.com/Droidtop/lib-sync", tag = "v0.1.6" }
-# lib-games ci/rust-1.85 ee121ab, games-scan 0.3.1 (0.3.0 on Rust 1.85 and lib-sync 0.1.6; Droidtop/tracker#867).
-# Becomes tag = "v0.3.1" once lib-games releases it.
-droidtop-agent-scan = { package = "games-scan", git = "https://github.com/Droidtop/lib-games", rev = "ee121ab997b76c3f24951aae6ffe49d670d822da" }
-droidtop-agent-store = { package = "sync-store", git = "https://github.com/Droidtop/lib-sync", tag = "v0.1.6" }
+droidtop-agent-core = { package = "sync-core", git = "https://github.com/Droidtop/lib-sync", tag = "v0.2.0" }
+droidtop-agent-scan = { package = "games-scan", git = "https://github.com/Droidtop/lib-games", rev = "effbc9c7bfbd2365f1192ccbe7e1bb58289679a3" }
+droidtop-agent-store = { package = "sync-store", git = "https://github.com/Droidtop/lib-sync", tag = "v0.2.0" }
 serde.workspace = true
 serde_json.workspace = true
 # The Ludusavi manifest is YAML; it is read once when it is updated and kept
