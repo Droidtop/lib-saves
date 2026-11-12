@@ -3,6 +3,13 @@
 All notable changes to lib-saves. Versions follow [Semantic Versioning](https://semver.org/)
 (in 0.x, only a new minor version may break the interface; CI's `semver` job enforces it).
 
+## [0.3.0]
+
+### Changed
+- Pins lib-sync v0.2.0 (was v0.1.6) and lib-games 0.4.0, its lib-sync 0.2 release (was games-scan 0.3.1 by rev). saves-locate
+  works with sync-core's and games-scan's types, so this is a new minor version. droidtop, droidtop-agent, lib-games and
+  lib-plugins move to lib-sync 0.2 together (Droidtop/tracker#573).
+
 ## [0.2.1]
 
 ### Changed
