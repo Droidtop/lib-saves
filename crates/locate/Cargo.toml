@@ -13,7 +13,7 @@ path = "src/lib.rs"
 
 [dependencies]
 droidtop-agent-core = { package = "sync-core", git = "https://github.com/Droidtop/lib-sync", tag = "v0.2.1" }
-droidtop-agent-scan = { package = "games-scan", git = "https://github.com/Droidtop/lib-games", rev = "e142335ac34d605eb072565e8278bc3a32afe46c" }
+droidtop-agent-scan = { package = "games-scan", git = "https://github.com/Droidtop/lib-games", tag = "v0.4.0" }
 droidtop-agent-store = { package = "sync-store", git = "https://github.com/Droidtop/lib-sync", tag = "v0.2.1" }
 serde.workspace = true
 serde_json.workspace = true

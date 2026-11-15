@@ -867,7 +867,7 @@ dependencies = [
 [[package]]
 name = "games-scan"
 version = "0.4.0"
-source = "git+https://github.com/Droidtop/lib-games?rev=e142335ac34d605eb072565e8278bc3a32afe46c#e142335ac34d605eb072565e8278bc3a32afe46c"
+source = "git+https://github.com/Droidtop/lib-games?tag=v0.4.0#e142335ac34d605eb072565e8278bc3a32afe46c"
 dependencies = [
  "dirs",
  "engines-detect",
