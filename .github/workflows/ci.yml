@@ -47,7 +47,7 @@ jobs:
         if: success() || failure()
         run: cargo test --workspace --no-fail-fast
 
-  # Pythia builds these crates with Ubuntu's rustc-1.85, as Launchpad does (Droidtop/tracker#867): the workspace is
+  # Pythia builds these crates with Ubuntu's rustc-1.91, as Launchpad does (Droidtop/tracker#867): the workspace is
   # checked with 1.85, resolving dependencies to versions 1.85 can build, as a consumer's lock would.
   msrv:
     runs-on: ubuntu-24.04
@@ -57,8 +57,8 @@ jobs:
           persist-credentials: false
       - uses: dtolnay/rust-toolchain@6bed0761d98439e5a578e2877258200ad565ba87 # stable
         with:
-          toolchain: "1.85"
-      - name: Check with Rust 1.85
+          toolchain: "1.91"
+      - name: Check with Rust 1.91
         env:
           CARGO_RESOLVER_INCOMPATIBLE_RUST_VERSIONS: fallback
         run: |

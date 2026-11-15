@@ -7,7 +7,7 @@ version = "0.3.0"
 edition = "2021"
 license = "GPL-3.0-only"
 repository = "https://github.com/Droidtop/lib-saves"
-rust-version = "1.85"
+rust-version = "1.91"
 
 [workspace.dependencies]
 # windowcast's device identity and pairing, used as they are (docs/DESIGN.md
